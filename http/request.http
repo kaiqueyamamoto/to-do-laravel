@@ -1,0 +1,34 @@
+GET http://localhost:8000/api/tasks
+
+################################
+# Create a new task
+################################
+
+POST http://localhost:8000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Estudar mongodb",
+    "completed": false
+}
+
+################################
+# Get tasks
+################################
+GET http://localhost:8000/api/tasks/14
+
+################################
+# Update tasks
+################################
+PATCH http://localhost:8000/api/tasks/14
+Content-Type: application/json
+
+{
+    "title": "Task title - aprendendo laravel",
+    "completed": true
+}
+
+################################
+# Delete tasks
+################################
+DELETE http://localhost:8000/api/tasks/16
